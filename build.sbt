@@ -15,8 +15,13 @@ scalaVersion := "2.10.4"
 scalacOptions += "-target:jvm-1.7"
 
 libraryDependencies ++= Seq(
-  "com.chrisomeara" %% "pillar" % "3.0.0-SNAPSHOT",
+  "com.chrisomeara" %% "pillar" % "2.1.0",
   "com.datastax.cassandra" % "cassandra-driver-core" % "3.0.0"
+)
+
+resolvers ++= Seq(
+  "marcopriebe at bintray" at "https://dl.bintray.com/marcopriebe/maven/",
+  "Typesafe repository:" at "http://repo.typesafe.com/typesafe/releases/"
 )
 
 // Maven publishing info
